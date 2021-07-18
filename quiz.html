@@ -74,6 +74,11 @@ for(i=0; i<grading.length; i++) {
 
 document.getElementById("grade2").innerHTML = result2; 
 	
+const text = '[ "Ford", "BMW", "Audi" ]';
+const myArr = JSON.parse(text);
+text.push(result);
+document.getElementById("demo").innerHTML = myArr[1];
+	
 	  
 return false; // required to not refresh the page; just leave this here
 } //this ends the submit function
